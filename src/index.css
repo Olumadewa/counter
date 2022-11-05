@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #ad3e00;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.poor-story {
+  font-family: 'Poor Story', cursive;
+}
+
+.min-b-width {
+  min-width: 80px;
+}
+
+/* apply custom classes to the base tailwind classes */
+@layer utilities {
+  .morph {
+    background: linear-gradient(145deg, #9c3800, #b94200);
+    box-shadow: 22px 22px 93px #6b2600,
+      -22px -22px 93px #ef5600;
+  }
+
+  .morph-fixed {
+    background: linear-gradient(145deg, #9c3800, #b94200);
+    box-shadow: 22px 22px 93px #6b2600,
+      -22px -22px 93px #ef5600;
+  }
+
+
+  .morph:hover {
+    background: linear-gradient(145deg, #9c3800, #b94200);
+    box-shadow: 20px 20px 60px transparent,
+      -20px -20px 60px transparent;
+  }
+}
