@@ -6,7 +6,7 @@ const Header = () => {
     { to: "/boundary", text: "Error Boundary" },
   ];
   return (
-    <div className="flex justify-between w-screen px-4 md:px-6 lg:px-9 items-center">
+    <div className="flex justify-between w-screen px-4 md:px-6 lg:px-9 items-center sticky left-0 right-0 top-0">
       <Link to={"/"}>
         <h3 className="text-white poor-story text-2xl md:text-4xl lg:text-6xl">
           Olu's counter
